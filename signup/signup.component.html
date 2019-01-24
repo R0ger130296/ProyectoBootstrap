@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-4.2.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="login-page" [@routerTransition]>
+        <div class="row justify-content-md-center">
+            <div class="col-md-4">
+                <img class="user-avatar" src="../images/descarga.png" width="150px" />
+                <h1>Ingrese sus datos</h1>
+                <form role="form" method='POST' action="../controladores/insertarUsuario.php" >
+                    <div class="form-content">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-underline input-lg" name="name" placeholder="Apellidos y Nombres">
+                        </div>
+    
+                        <div class="form-group">
+                            <input type="text" class="form-control input-underline input-lg" name="cedula" placeholder="Número de Identificación">
+                        </div>
+    
+                        <div class="form-group">
+                            <input type="text" class="form-control input-underline input-lg" name="telefono" placeholder="Teléfono/Celular +593">
+                        </div>
+    
+                        <div class="form-group">
+                            <input type="email" class="form-control input-underline input-lg" name="email" placeholder="Correo Electrónico">
+                        </div>
+    
+                        <div class="form-group">
+                            <input type="password" class="form-control input-underline input-lg" name="password" placeholder="Contraseña">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control input-underline input-lg" name="password" placeholder="Repetir Contraseña">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn rounded-btn" >Registrarse<a  href="../paginaPrincipal/paginaPrincipal.html"></a></button>
+                    <a class="btn rounded-btn" href="../paginaPrincipal/paginaPrincipal.html">Volver a Inicio</a>
+                    <hr>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/bootstrap-4.2.1-dist/js/jquery.js"></script>
+    <script src="/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

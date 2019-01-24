@@ -11,21 +11,21 @@
     <div class="login-page" [@routerTransition]>
         <div class="row justify-content-md-center">
             <div class="col-md-4">
-                <img src="assets/images/descarga.png" width="150px" class="user-avatar" />
+                <img src="../images/descarga.png" width="150px" class="user-avatar" />
                 <h1>Iniciar Sesión</h1>
                 <form role="form">
                     <div class="form-content">
                         <div class="form-group">
-                            <input type="text" ng-model="name" class="form-control input-underline input-lg" id="" placeholder=" Correo Electrónico ">
+                            <input type="text" ng-model="name" class="form-control input-underline input-lg"  placeholder=" Correo Electrónico ">
                         </div>
     
                         <div class="form-group">
-                            <input type="password" class="form-control input-underline input-lg" id="" placeholder=" Contraseña ">
+                            <input type="password" class="form-control input-underline input-lg" placeholder=" Contraseña ">
                         </div>
                     </div>
-                    <a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()">Ingresar </a>
+                    <a class="btn rounded-btn" href="../reseva/reserva.html">Ingresar </a>
                     &nbsp;
-                    <a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()">Volver a Inicio </a>
+                    <a class="btn rounded-btn" href="../index.html">Volver a Inicio </a>
                 </form>
             </div>
         </div>
